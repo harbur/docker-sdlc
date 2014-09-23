@@ -6,6 +6,7 @@ jenkinsLTS:
   image: jenkins
   ports:
     - "8080"
+    - "50000"
 jenkinsHarbur:
   image: quay.io/harbur/jenkins
   ports:
