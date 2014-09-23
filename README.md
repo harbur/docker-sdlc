@@ -29,10 +29,11 @@ It contains solutions of the following sections:
 
 Usable Containers:
 
-|Container|Version|Size|
-|aespinosa/jenkins|latest v1.581|471.3 MB|
-|jenkins|LTS 1.565.1|670.8 MB|
-|quay.io/harbur/jenkins|LTS 1.565.1|715.4 MB|
+|Container             |Version      |Size    |
+|----------------------|:-----------:|-------:|
+|aespinosa/jenkins     |latest v1.581|471.3 MB|
+|jenkins               |LTS 1.565.1  |670.8 MB|
+|quay.io/harbur/jenkins|LTS 1.565.1  |715.4 MB|
 
 ### QuickStart Latest
 
