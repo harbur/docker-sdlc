@@ -1,0 +1,15 @@
+mysql:
+  image: tutum/mysql
+  environment:
+    - MYSQL_USER=redmine
+    - MYSQL_PASS=aemoodeecohyohmi
+redmine:
+  image: sameersbn/redmine:2.5.2-2
+  links:
+    - mysql:mysql
+  environment:
+    - DB_USER=redmine
+    - DB_PASS=aemoodeecohyohmi
+    - DB_NAME=redmine_production
+  ports:
+    - "80"

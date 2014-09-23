@@ -1,0 +1,17 @@
+jenkinsLatest:
+  image: aespinosa/jenkins:latest
+  ports:
+    - "8080"
+jenkinsLTS:
+  image: jenkins
+  ports:
+    - "8080"
+jenkinsHarbur:
+  image: quay.io/harbur/jenkins
+  ports:
+    - "8080"
+jenkinsSlave:
+  image: spiddy/dind-jenkins-slave
+  links:
+    - jenkinsHarbur:master
+  privileged: true
