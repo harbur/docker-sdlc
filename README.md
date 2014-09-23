@@ -27,13 +27,14 @@ It contains solutions of the following sections:
 
 ## jenkins
 
-Usable Containers:
+Usable Containers
 
-|Container             |Version      |Size    |
-|----------------------|:-----------:|-------:|
-|aespinosa/jenkins     |latest v1.581|471.3 MB|
-|jenkins               |LTS 1.565.1  |670.8 MB|
-|quay.io/harbur/jenkins|LTS 1.565.1  |715.4 MB|
+|ID           |Container                |Version      |Size    |
+|-------------|-------------------------|:-----------:|-------:|
+|jenkinsLatest|aespinosa/jenkins        |latest v1.581|471.3 MB|
+|jenkinsLTS   |jenkins                  |LTS 1.565.1  |670.8 MB|
+|jenkinsHarbur|quay.io/harbur/jenkins   |LTS 1.565.1  |715.4 MB|
+|jenkinsSlave |spiddy/dind-jenkins-slave|-            |891.5 MB|
 
 ### QuickStart Latest
 
