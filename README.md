@@ -29,14 +29,16 @@ It contains solutions of the following sections:
 
 Usable Containers
 
-|ID           |Container                |Version      |Size    |
-|-------------|-------------------------|:-----------:|-------:|
-|jenkinsLatest|aespinosa/jenkins        |latest v1.581|471.3 MB|
-|jenkinsLTS   |jenkins                  |LTS 1.565.1  |670.8 MB|
-|jenkinsHarbur|quay.io/harbur/jenkins   |LTS 1.565.1  |715.4 MB|
-|jenkinsSlave |spiddy/dind-jenkins-slave|-            |891.5 MB|
+|ID           |Container                |Version        |Size    |
+|-------------|-------------------------|:-------------:|-------:|
+|jenkinsLatest|aespinosa/jenkins        |latest `v1.581`|471.3 MB|
+|jenkinsLTS   |jenkins                  |LTS `v1.565.1` |670.8 MB|
+|jenkinsHarbur|quay.io/harbur/jenkins   |LTS `v1.565.1` |715.4 MB|
+|jenkinsSlave |spiddy/dind-jenkins-slave|-              |891.5 MB|
 
 ### QuickStart Latest
+
+![Jenkins Latest](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLatest.png "Jenkins Latest")
 
 To launch the latest Jenkins version run:
 
@@ -68,7 +70,7 @@ docker port dockersdlc_jenkinsLTS_1 8080
 
 Current LTS Issues:
 
-* (Failed to listen to incoming slave connection)[https://github.com/cloudbees/jenkins-ci.org-docker/issues/6]
+* [Failed to listen to incoming slave connection](https://github.com/cloudbees/jenkins-ci.org-docker/issues/6)
 
 ### QuickStart Harbur
 
