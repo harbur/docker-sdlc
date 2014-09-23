@@ -60,6 +60,8 @@ docker port dockersdlc_jenkinsLatest_1 8080
 
 ### QuickStart LTS
 
+![Jenkins LTS](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLTS.png "Jenkins LTS")
+
 To launch the LTS Jenkins version run:
 
 <pre>
@@ -73,6 +75,8 @@ Current LTS Issues:
 * [Failed to listen to incoming slave connection](https://github.com/cloudbees/jenkins-ci.org-docker/issues/6)
 
 ### QuickStart Harbur
+
+![Jenkins Harbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsHarbur.png "Jenkins Harbur")
 
 To launch the Harbur Jenkins version run:
 
