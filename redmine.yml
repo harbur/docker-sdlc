@@ -1,8 +1,9 @@
 mysql:
-  image: tutum/mysql
+  image: orchardup/mysql
   environment:
     - MYSQL_USER=redmine
-    - MYSQL_PASS=aemoodeecohyohmi
+    - MYSQL_PASSWORD=aemoodeecohyohmi
+    - MYSQL_DATABASE=redmine_production
 redmine:
   image: sameersbn/redmine:2.5.2-2
   links:
