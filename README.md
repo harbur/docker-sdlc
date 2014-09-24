@@ -29,7 +29,7 @@ It contains solutions of the following sections:
 
 Usable Containers
 
-|ID           |Container                |Version        |Size    |
+|ID           |Container                |App Version    |Size    |
 |-------------|-------------------------|:-------------:|-------:|
 |jenkinsLatest|aespinosa/jenkins        |latest `v1.581`|471.3 MB|
 |jenkinsLTS   |jenkins                  |LTS `v1.565.1` |670.8 MB|
@@ -82,7 +82,6 @@ To launch the Harbur Jenkins version run:
 
 <pre>
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-docker pull quay.io/harbur/jenkins # This is needed because fig cannot authenticate with quay.io yet
 fig -f jenkins.yml -d jenkinsHarbur jenkinsSlave
 docker port dockersdlc_jenkinsHarbur_1 8080
 </pre>

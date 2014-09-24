@@ -1,0 +1,4 @@
+nexusHarbur:
+  image: quay.io/harbur/nexus:latest
+  ports:
+    - "8080"

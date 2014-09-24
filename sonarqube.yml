@@ -1,0 +1,4 @@
+sonarqubeHarbur:
+  image: quay.io/harbur/sonarqube:latest
+  ports:
+    - "9000"

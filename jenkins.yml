@@ -8,11 +8,11 @@ jenkinsLTS:
     - "8080"
     - "50000"
 jenkinsHarbur:
-  image: quay.io/harbur/jenkins
+  image: quay.io/harbur/jenkins:latest
   ports:
     - "8080"
 jenkinsSlave:
-  image: spiddy/dind-jenkins-slave
+  image: spiddy/dind-jenkins-slave:latest
   links:
     - jenkinsHarbur:master
   privileged: true

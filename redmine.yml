@@ -14,3 +14,7 @@ redmine:
     - DB_NAME=redmine_production
   ports:
     - "80"
+redmineHarbur:
+  image: quay.io/harbur/redmine:latest
+  ports:
+    - "80"

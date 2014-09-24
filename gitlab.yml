@@ -1,5 +1,5 @@
 mysql:
-  image: orchardup/mysql
+  image: orchardup/mysql:latest
   environment:
     - MYSQL_USER=gitlab
     - MYSQL_PASSWORD=uidoosaipakadila
