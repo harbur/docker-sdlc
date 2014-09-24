@@ -9,6 +9,8 @@ jenkinsLTS:
     - "50000"
 jenkinsHarbur:
   image: quay.io/harbur/jenkins:latest
+  environment:
+    - HOSTNAME
   ports:
     - "8080"
 jenkinsSlave:
