@@ -5,7 +5,7 @@ mysql:
     - MYSQL_PASSWORD=uidoosaipakadila
     - MYSQL_DATABASE=gitlabhq_production
 gitlab:
-  image: sameersbn/gitlab:7.3.0
+  image: sameersbn/gitlab:latest
   links:
    - redis:redisio
    - mysql:mysql
@@ -17,5 +17,5 @@ gitlab:
     - DB_NAME=gitlabhq_production
     - DB_PASS=uidoosaipakadila
 redis:
-  image: sameersbn/redis:latest
+  image: redis:2.8.9
 
