@@ -45,8 +45,8 @@ Topology
 |Service             |Database  |Redis|
 |--------------------|----------|-----|
 |gitlab              |postgresql|redis|
-| &#x21b3; postgresql|          |     |
-| &#x21b3; redis     |          |     |
+| &#x2937; postgresql|          |     |
+| &#x2937; redis     |          |     |
 
 ### QuickStart
 
@@ -108,7 +108,7 @@ Topology
 |jenkinsLatest         |jenkinsSlave|
 |jenkinsLTS            |            |
 |jenkinsHarbur         |            |
-| &#x21b3; jenkinsSlave|            |
+| &#x2937; jenkinsSlave|            |
 
 ### QuickStart Latest
 
