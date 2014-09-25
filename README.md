@@ -4,10 +4,10 @@
 
 - [Introduction](#introduction)
 - [Code Hosting](#code-hosting)
-  - [[GitLab](https://about.gitlab.com/)](#gitlabhttpsaboutgitlabcom)
+  - [GitLab](#gitlab)
     - [QuickStart](#quickstart)
 - [Continuous Integration](#continuous-integration)
-  - [[Jenkins](http://jenkins-ci.org/)](#jenkinshttpjenkins-ciorg)
+  - [Jenkins](#jenkins)
     - [QuickStart Latest](#quickstart-latest)
     - [QuickStart LTS](#quickstart-lts)
     - [QuickStart Harbur](#quickstart-harbur)
@@ -80,7 +80,9 @@ echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 
 # Continuous Integration
 
-## [Jenkins](http://jenkins-ci.org/)
+## Jenkins
+
+> [Jenkins](http://jenkins-ci.org/) An extendable open source continuous integration server
 
 Usable Containers
 
