@@ -28,7 +28,9 @@ It contains solutions of the following sections:
 
 # Code Hosting
 
-## [GitLab](https://about.gitlab.com/)
+## GitLab
+
+| [GitLab](https://about.gitlab.com/) offers git repository management, code reviews, issue tracking, activity feeds, wikis.
 
 Usable Containers
 
