@@ -42,11 +42,11 @@ Usable Containers
 
 Topology
 
-|Service     |Database  |Redis|
-|------------|----------|-----|
-|gitlab      |postgresql|redis|
-|* postgresql|          |     |
-|* redis     |          |     |
+|Service             |Database  |Redis|
+|--------------------|----------|-----|
+|gitlab              |postgresql|redis|
+| &#x21b3; postgresql|          |     |
+| &#x21b3; redis     |          |     |
 
 ### QuickStart
 
