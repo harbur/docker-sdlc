@@ -23,9 +23,59 @@ It contains solutions of the following sections:
 * Code Analysis
 * Repository Management
 
+# Code Hosting
+
+## GitLab
+
+Usable Containers
+
+|ID           |Container                |App Version    |Size    |
+|-------------|-------------------------|:-------------:|-------:|
+|gitlab       |sameersbn/gitlab:latest  |latest         |729.5 MB|
+|mysql        |orchardup/mysql          |latest         |292.4 MB|
+|redis        |redis                    |`v2.8.9`       | 98.7 MB|
+
+### QuickStart
+
+![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLatest.png "GitLab")
+
+To launch GitLab
+
+<pre>
+fig -f gitlab.yml up -d
+echo "Gitlab can be accessed at: $(docker port dockersdlc_gitlab_1 80)"
+fig -f gitlab.yml logs
+</pre>
+
+To stop GitLab
+
+<pre>
+fig -f gitlab.yml stop
+</pre>
+
+To remove GitLab
+
+*WARNING*: You'll loose your data after this command
+
+<pre>
+fig -f gitlab.yml kill
+fig -f gitlab.yml rm
+</pre>
+
+To launch more than one GitLab instance on same host
+
+<pre>
+fig -f gitlab.yml -p gitlab1 up -d
+fig -f gitlab.yml -p gitlab2 up -d
+echo "GitLab 1 can be accessed at: $(docker port gitlab1_gitlab_1 80)"
+echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
+</pre>
+
+*NOTE*: These instances do not share anything, new redis & mysql instances are launched for each one separately.
+
 # Continuous Integration
 
-## jenkins
+## Jenkins
 
 Usable Containers
 
