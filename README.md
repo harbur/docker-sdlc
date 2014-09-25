@@ -37,7 +37,7 @@ Usable Containers
 
 ### QuickStart
 
-![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLatest.png "GitLab")
+![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "GitLab")
 
 To launch GitLab
 
