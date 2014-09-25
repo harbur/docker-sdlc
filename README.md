@@ -30,7 +30,7 @@ It contains solutions of the following sections:
 
 ## GitLab
 
-| [GitLab](https://about.gitlab.com/) offers git repository management, code reviews, issue tracking, activity feeds, wikis.
+> [GitLab](https://about.gitlab.com/) offers git repository management, code reviews, issue tracking, activity feeds, wikis.
 
 Usable Containers
 
