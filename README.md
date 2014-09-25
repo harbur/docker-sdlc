@@ -3,8 +3,11 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Introduction](#introduction)
+- [Code Hosting](#code-hosting)
+  - [[GitLab](https://about.gitlab.com/)](#gitlabhttpsaboutgitlabcom)
+    - [QuickStart](#quickstart)
 - [Continuous Integration](#continuous-integration)
-  - [jenkins](#jenkins)
+  - [[Jenkins](http://jenkins-ci.org/)](#jenkinshttpjenkins-ciorg)
     - [QuickStart Latest](#quickstart-latest)
     - [QuickStart LTS](#quickstart-lts)
     - [QuickStart Harbur](#quickstart-harbur)
@@ -25,15 +28,15 @@ It contains solutions of the following sections:
 
 # Code Hosting
 
-## GitLab
+## [GitLab](https://about.gitlab.com/)
 
 Usable Containers
 
-|ID           |Container                |App Version    |Size    |
-|-------------|-------------------------|:-------------:|-------:|
-|gitlab       |sameersbn/gitlab:latest  |latest         |729.5 MB|
-|mysql        |orchardup/mysql          |latest         |292.4 MB|
-|redis        |redis                    |`v2.8.9`       | 98.7 MB|
+|ID        |Container                                                              |App Version    |Size    |
+|----------|-----------------------------------------------------------------------|:-------------:|-------:|
+|gitlab    |[sameersbn/gitlab:latest](https://github.com/sameersbn/docker-gitlab)  |`v7.3.1-3`     |729.5 MB|
+|postgresql|[orchardup/postgresql](https://github.com/orchardup/docker-postgresql) |latest         |488.6 MB|
+|redis     |[redis](https://registry.hub.docker.com/_/redis/)                      |`v2.8.9`       | 98.7 MB|
 
 ### QuickStart
 
@@ -71,20 +74,20 @@ echo "GitLab 1 can be accessed at: $(docker port gitlab1_gitlab_1 80)"
 echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 </pre>
 
-*NOTE*: These instances do not share anything, new redis & mysql instances are launched for each one separately.
+*NOTE*: These instances do not share anything, new redis & postgresql instances are launched for each one separately.
 
 # Continuous Integration
 
-## Jenkins
+## [Jenkins](http://jenkins-ci.org/)
 
 Usable Containers
 
-|ID           |Container                |App Version    |Size    |
-|-------------|-------------------------|:-------------:|-------:|
-|jenkinsLatest|aespinosa/jenkins        |latest `v1.581`|471.3 MB|
-|jenkinsLTS   |jenkins                  |LTS `v1.565.1` |670.8 MB|
-|jenkinsHarbur|quay.io/harbur/jenkins   |LTS `v1.565.1` |715.4 MB|
-|jenkinsSlave |spiddy/dind-jenkins-slave|-              |891.5 MB|
+|ID           |Container                                                                                |App Version    |Size    |
+|-------------|-----------------------------------------------------------------------------------------|:-------------:|-------:|
+|jenkinsLatest|[aespinosa/jenkins](https://github.com/aespinosa/docker-jenkins)                         |latest `v1.581`|471.3 MB|
+|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                    |LTS `v1.565.1` |670.8 MB|
+|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)|LTS `v1.565.1` |715.4 MB|
+|jenkinsSlave |[spiddy/dind-jenkins-slave](https://github.com/spiddy/dind-jenkins-slave)                |-              |891.5 MB|
 
 ### QuickStart Latest
 
