@@ -40,6 +40,14 @@ Usable Containers
 |postgresql|[orchardup/postgresql](https://github.com/orchardup/docker-postgresql) |latest         |488.6 MB|
 |redis     |[redis](https://registry.hub.docker.com/_/redis/)                      |`v2.8.9`       | 98.7 MB|
 
+Topology
+
+|Service     |Database  |Redis|
+|------------|----------|-----|
+|gitlab      |postgresql|redis|
+|* postgresql|          |     |
+|* redis     |          |     |
+
 ### QuickStart
 
 ![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "GitLab")
