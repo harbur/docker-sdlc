@@ -261,7 +261,7 @@ Usable Containers
 
 |ID             |Container                                                                                               |App Version|Size    |
 |---------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
-|sonarqube      |[harbur/sonarqube](harbur/sonarqube:latest)                                                             |`v4.4`     |  871 MB|
+|sonarqube      |[harbur/sonarqube](https://github.com/harbur/docker-sonarqube)                                          |`v4.4`     |  871 MB|
 |postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
 
 Topology
