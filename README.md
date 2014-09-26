@@ -11,6 +11,8 @@
     - [QuickStart Latest](#quickstart-latest)
     - [QuickStart LTS](#quickstart-lts)
     - [QuickStart Harbur](#quickstart-harbur)
+- [Project Management](#project-management)
+  - [Redmine](#redmine)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -167,4 +169,36 @@ In case more slave instances are needed you can scale dynamically with the follo
 
 <pre>
 fig -f jenkins.yml scale jenkinsSlave=2
+</pre>
+
+# Project Management
+
+## Redmine
+
+> [Redmine](http://www.redmine.org/) is a flexible project management web application
+
+Usable Containers
+
+|ID           |Container                                                              |App Version|Size    |
+|-------------|-----------------------------------------------------------------------|:---------:|-------:|
+|redmine      |[sameersbn/redmine](https://github.com/sameersbn/docker-redmine)       |`v2.5.2-2` |997.9 MB|
+|postgresql   |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql) |latest     |488.6 MB|
+
+Topology
+
+|Service             |Database  |
+|--------------------|----------|
+|redmine             |postgresql|
+| &#x2937; postgresql|          |
+
+### QuickStart
+
+![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "Redmine")
+
+To launch Redmine
+
+<pre>
+fig -f redmine.yml up -d redmine
+echo "Redmine can be accessed at: $(docker port dockersdlc_redmine_1 80)"
+fig -f redmine.yml logs
 </pre>

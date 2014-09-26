@@ -1,13 +1,13 @@
-mysql:
-  image: orchardup/mysql
+postgresql:
+  image: orchardup/postgresql:latest
   environment:
-    - MYSQL_USER=redmine
-    - MYSQL_PASSWORD=aemoodeecohyohmi
-    - MYSQL_DATABASE=redmine_production
+    - POSTGRESQL_USER=redmine
+    - POSTGRESQL_PASS=aemoodeecohyohmi
+    - POSTGRESQL_DB=redmine_production
 redmine:
   image: sameersbn/redmine:2.5.2-2
   links:
-    - mysql:mysql
+    - postgresql:postgresql
   environment:
     - DB_USER=redmine
     - DB_PASS=aemoodeecohyohmi
