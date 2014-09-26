@@ -58,7 +58,7 @@ To launch GitLab
 
 <pre>
 fig -f gitlab.yml up -d
-echo "Gitlab can be accessed at: $(docker port dockersdlc_gitlab_1 80)"
+echo "GitLab can be accessed at: $(docker port dockersdlc_gitlab_1 80)"
 fig -f gitlab.yml logs
 </pre>
 
@@ -87,6 +87,28 @@ echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 </pre>
 
 *NOTE*: These instances do not share anything, new redis & postgresql instances are launched for each one separately.
+
+## GitBucket
+
+> [GitBucket](https://github.com/takezoe/gitbucket) The easily installable Github clone powered by Scala
+
+Usable Containers
+
+|ID        |Container                                                              |App Version    |Size    |
+|----------|-----------------------------------------------------------------------|:-------------:|-------:|
+|gitbucket |[f99aq8ove/gitbucket](https://github.com/f99aq8ove/docker-gitbucket)   |`v2.2.1`       |376.2 MB|
+
+### QuickStart
+
+![GitBucket](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitBucket.png "GitBucket")
+
+To launch GitBucket
+
+<pre>
+fig -f gitbucket.yml up -d
+echo "GitBucket can be accessed at: $(docker port dockersdlc_gitbucket_1 8080)"
+fig -f gitbucket.yml logs
+</pre>
 
 # Continuous Integration
 

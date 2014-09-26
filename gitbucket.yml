@@ -1,0 +1,4 @@
+gitbucket:
+  image: f99aq8ove/gitbucket:latest
+  ports:
+    - "8080"
