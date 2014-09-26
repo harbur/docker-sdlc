@@ -176,12 +176,12 @@ Extra Features
 
 Usable Containers
 
-|ID           |Container                                                                                                 |App Version    |Size    |
-|-------------|----------------------------------------------------------------------------------------------------------|:-------------:|-------:|
-|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3 MB|
-|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                     |LTS `v1.565.1` |670.8 MB|
-|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                 |LTS `v1.565.1` |715.4 MB|
-|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5 MB|
+|ID           |Container                                                                                                  |App Version    |Size    |
+|-------------|-----------------------------------------------------------------------------------------------------------|:-------------:|-------:|
+|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3 MB|
+|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                      |LTS `v1.565.1` |670.8 MB|
+|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                  |LTS `v1.565.1` |715.4 MB|
+|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave)](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5 MB|
 
 Topology
 
