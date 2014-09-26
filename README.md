@@ -29,7 +29,7 @@ It contains solutions of the following sections:
 * Code Hosting
 * Project Management
 * Continuous Integration
-* Code Analysis
+* Continuous Inspection
 * Repository Management
 
 # Code Hosting
@@ -249,4 +249,36 @@ In case more slave instances are needed you can scale dynamically with the follo
 
 <pre>
 fig -f jenkins.yml scale jenkinsSlave=2
+</pre>
+
+# Continuous Inspection
+
+## SonarQube
+
+> [SonarQube](http://www.sonarqube.org/) is a flexible project management web application
+
+Usable Containers
+
+|ID             |Container                                                                                |App Version|Size    |
+|---------------|-----------------------------------------------------------------------------------------|:---------:|-------:|
+|sonarqube      |[harbur/sonarqube](harbur/sonarqube:latest)                                              |`v4.4`     |  871 MB|
+|postgresql     |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql)                   |latest     |488.6 MB|
+
+Topology
+
+|Service             |Database  |
+|--------------------|----------|
+|sonarqube           |postgresql|
+| &#x2937; postgresql|          |
+
+### QuickStart
+
+![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
+
+To launch SonarQube
+
+<pre>
+fig -f sonarqube.yml up
+echo "SonarQube can be accessed at: $(docker port dockersdlc_sonarqube_1 9000)"
+fig -f sonarqube.yml logs
 </pre>
