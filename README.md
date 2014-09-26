@@ -40,11 +40,11 @@ It contains solutions of the following sections:
 
 Usable Containers
 
-|ID        |Container                                                              |App Version    |Size    |
-|----------|-----------------------------------------------------------------------|:-------------:|-------:|
-|gitlab    |[sameersbn/gitlab:latest](https://github.com/sameersbn/docker-gitlab)  |`v7.3.1-3`     |729.5 MB|
-|postgresql|[orchardup/postgresql](https://github.com/orchardup/docker-postgresql) |latest         |488.6 MB|
-|redis     |[redis](https://registry.hub.docker.com/_/redis/)                      |`v2.8.9`       | 98.7 MB|
+|ID        |Container                                                              |App Version    |Size    |Badge                                                        |
+|----------|-----------------------------------------------------------------------|:-------------:|-------:|-------------------------------------------------------------|
+|gitlab    |[sameersbn/gitlab:latest](https://github.com/sameersbn/docker-gitlab)  |`v7.3.1-3`     |729.5 MB|![Badge](http://dockeri.co/image/sameersbn/docker-gitlab)    |
+|postgresql|[orchardup/postgresql](https://github.com/orchardup/docker-postgresql) |latest         |488.6 MB|![Badge](http://dockeri.co/image/orchardup/docker-postgresql)|
+|redis     |[redis](https://registry.hub.docker.com/_/redis/)                      |`v2.8.9`       | 98.7 MB|                                                             |
 
 Topology
 
@@ -98,9 +98,9 @@ echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 
 Usable Containers
 
-|ID        |Container                                                              |App Version    |Size    |
-|----------|-----------------------------------------------------------------------|:-------------:|-------:|
-|gitbucket |[f99aq8ove/gitbucket](https://github.com/f99aq8ove/docker-gitbucket)   |`v2.2.1`       |376.2 MB|
+|ID        |Container                                                              |App Version    |Size    |Badge                                                |
+|----------|-----------------------------------------------------------------------|:-------------:|-------:|-----------------------------------------------------|
+|gitbucket |[f99aq8ove/gitbucket](https://github.com/f99aq8ove/docker-gitbucket)   |`v2.2.1`       |376.2 MB|![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)|
 
 ### QuickStart
 
