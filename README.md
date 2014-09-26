@@ -27,8 +27,8 @@ Docker-based multi-container Software Development Life Cycle environment.
 It contains solutions of the following sections:
 
 * Code Hosting
-* Continuous Integration
 * Project Management
+* Continuous Integration
 * Code Analysis
 * Repository Management
 
@@ -114,6 +114,60 @@ echo "GitBucket can be accessed at: $(docker port dockersdlc_gitbucket_1 8080)"
 fig -f gitbucket.yml logs
 </pre>
 
+# Project Management
+
+## Redmine
+
+> [Redmine](http://www.redmine.org/) is a flexible project management web application
+
+Usable Containers
+
+|ID           |Container                                                                                |App Version|Size    |
+|-------------|-----------------------------------------------------------------------------------------|:---------:|-------:|
+|redmine      |[sameersbn/redmine](https://github.com/sameersbn/docker-redmine)                         |`v2.5.2-2` |997.9 MB|
+|postgresql   |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql)                   |latest     |488.6 MB|
+|redmineHarbur|[quay.io/harbur/redmine](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1 MB|
+
+Topology
+
+|Service             |Database  |
+|--------------------|----------|
+|redmine             |postgresql|
+| &#x2937; postgresql|          |
+|redmineHarbur       |          |
+| &#x2937; postgresql|          |
+
+### QuickStart
+
+![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/Redmine.png "Redmine")
+
+To launch Redmine
+
+<pre>
+fig -f redmine.yml up -d redmine
+echo "Redmine can be accessed at: $(docker port dockersdlc_redmine_1 80)"
+fig -f redmine.yml logs
+</pre>
+
+### QuickStart Harbur
+
+![RedmineHarbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/RedmineHarbur.png "RedmineHarbur")
+
+To launch the Harbur Redmine version run:
+
+<pre>
+docker login quay.io               # You need a Harbur TOKEN to access the containers
+FQDN=redmine.mydomain.com fig -f redmine.yml up -d redmineHarbur
+echo "Redmine can be accessed at: $(docker port dockersdlc_redmineHarbur_1 80)"
+fig -f redmine.yml logs
+</pre>
+
+Extra Features
+
+* Preconfigured Gitmike Theme
+* Preconfigured SMTP
+* Dynamically configured FQDN (Injected with FQDN variable)
+
 # Continuous Integration
 
 ## Jenkins
@@ -196,57 +250,3 @@ In case more slave instances are needed you can scale dynamically with the follo
 <pre>
 fig -f jenkins.yml scale jenkinsSlave=2
 </pre>
-
-# Project Management
-
-## Redmine
-
-> [Redmine](http://www.redmine.org/) is a flexible project management web application
-
-Usable Containers
-
-|ID           |Container                                                                                |App Version|Size    |
-|-------------|-----------------------------------------------------------------------------------------|:---------:|-------:|
-|redmine      |[sameersbn/redmine](https://github.com/sameersbn/docker-redmine)                         |`v2.5.2-2` |997.9 MB|
-|postgresql   |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql)                   |latest     |488.6 MB|
-|redmineHarbur|[quay.io/harbur/redmine](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1 MB|
-
-Topology
-
-|Service             |Database  |
-|--------------------|----------|
-|redmine             |postgresql|
-| &#x2937; postgresql|          |
-|redmineHarbur       |          |
-| &#x2937; postgresql|          |
-
-### QuickStart
-
-![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/Redmine.png "Redmine")
-
-To launch Redmine
-
-<pre>
-fig -f redmine.yml up -d redmine
-echo "Redmine can be accessed at: $(docker port dockersdlc_redmine_1 80)"
-fig -f redmine.yml logs
-</pre>
-
-### QuickStart Harbur
-
-![RedmineHarbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/RedmineHarbur.png "RedmineHarbur")
-
-To launch the Harbur Redmine version run:
-
-<pre>
-docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=redmine.mydomain.com fig -f redmine.yml up -d redmineHarbur
-echo "Redmine can be accessed at: $(docker port dockersdlc_redmineHarbur_1 80)"
-fig -f redmine.yml logs
-</pre>
-
-Extra Features
-
-* Preconfigured Gitmike Theme
-* Preconfigured SMTP
-* Dynamically configured FQDN (Injected with FQDN variable)
