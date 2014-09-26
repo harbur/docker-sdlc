@@ -6,6 +6,8 @@
 - [Code Hosting](#code-hosting)
   - [GitLab](#gitlab)
     - [QuickStart](#quickstart)
+  - [GitBucket](#gitbucket)
+    - [QuickStart](#quickstart-1)
 - [Continuous Integration](#continuous-integration)
   - [Jenkins](#jenkins)
     - [QuickStart Latest](#quickstart-latest)
@@ -13,6 +15,7 @@
     - [QuickStart Harbur](#quickstart-harbur)
 - [Project Management](#project-management)
   - [Redmine](#redmine)
+    - [QuickStart](#quickstart-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
