@@ -122,11 +122,11 @@ fig -f gitbucket.yml logs
 
 Usable Containers
 
-|ID           |Container                                                                                |App Version|Size    |
-|-------------|-----------------------------------------------------------------------------------------|:---------:|-------:|
-|redmine      |[sameersbn/redmine](https://github.com/sameersbn/docker-redmine)                         |`v2.5.2-2` |997.9 MB|
-|postgresql   |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql)                   |latest     |488.6 MB|
-|redmineHarbur|[quay.io/harbur/redmine](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1 MB|
+|ID           |Container                                                                                               |App Version|Size    |
+|-------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
+|redmine      |[![Badge](http://dockeri.co/image/sameersbn/redmine)](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9 MB|
+|postgresql   |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
+|redmineHarbur|[quay.io/harbur/redmine](http://docs.harbur.io/en/latest/applications/redmine/index.html)               |`v2.5.2-2` |998.1 MB|
 
 Topology
 
@@ -176,12 +176,12 @@ Extra Features
 
 Usable Containers
 
-|ID           |Container                                                                                |App Version    |Size    |
-|-------------|-----------------------------------------------------------------------------------------|:-------------:|-------:|
-|jenkinsLatest|[aespinosa/jenkins](https://github.com/aespinosa/docker-jenkins)                         |latest `v1.581`|471.3 MB|
-|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                    |LTS `v1.565.1` |670.8 MB|
-|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)|LTS `v1.565.1` |715.4 MB|
-|jenkinsSlave |[spiddy/dind-jenkins-slave](https://github.com/spiddy/dind-jenkins-slave)                |-              |891.5 MB|
+|ID           |Container                                                                                                 |App Version    |Size    |
+|-------------|----------------------------------------------------------------------------------------------------------|:-------------:|-------:|
+|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3 MB|
+|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                     |LTS `v1.565.1` |670.8 MB|
+|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                 |LTS `v1.565.1` |715.4 MB|
+|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5 MB|
 
 Topology
 
@@ -259,10 +259,10 @@ fig -f jenkins.yml scale jenkinsSlave=2
 
 Usable Containers
 
-|ID             |Container                                                                                |App Version|Size    |
-|---------------|-----------------------------------------------------------------------------------------|:---------:|-------:|
-|sonarqube      |[harbur/sonarqube](harbur/sonarqube:latest)                                              |`v4.4`     |  871 MB|
-|postgresql     |[orchardup/postgresql](https://github.com/orchardup/docker-postgresql)                   |latest     |488.6 MB|
+|ID             |Container                                                                                               |App Version|Size    |
+|---------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
+|sonarqube      |[harbur/sonarqube](harbur/sonarqube:latest)                                                             |`v4.4`     |  871 MB|
+|postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
 
 Topology
 
