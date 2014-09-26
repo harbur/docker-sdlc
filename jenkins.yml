@@ -3,7 +3,7 @@ jenkinsLatest:
   ports:
     - "8080"
 jenkinsLTS:
-  image: jenkins
+  image: jenkins:latest
   ports:
     - "8080"
     - "50000"
