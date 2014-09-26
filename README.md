@@ -98,9 +98,9 @@ echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 
 Usable Containers
 
-|ID        |Container                                                              |App Version    |Size    |Badge                                                |
-|----------|-----------------------------------------------------------------------|:-------------:|-------:|-----------------------------------------------------|
-|gitbucket |[f99aq8ove/gitbucket](https://github.com/f99aq8ove/docker-gitbucket)   |`v2.2.1`       |376.2 MB|![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)|
+|ID        |Container                                                                                             |App Version    |Size    |
+|----------|------------------------------------------------------------------------------------------------------|:-------------:|-------:|
+|gitbucket |[![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)](https://github.com/f99aq8ove/docker-gitbucket)|`v2.2.1`       |376.2 MB|
 
 ### QuickStart
 
