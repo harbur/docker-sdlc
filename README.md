@@ -193,7 +193,7 @@ Topology
 
 ### QuickStart
 
-![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "Redmine")
+![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/Redmine.png "Redmine")
 
 To launch Redmine
 
