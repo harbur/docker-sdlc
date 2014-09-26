@@ -16,5 +16,12 @@ redmine:
     - "80"
 redmineHarbur:
   image: quay.io/harbur/redmine:latest
+  links:
+    - postgresql:postgresql
+  environment:
+    - DB_USER=redmine
+    - DB_PASS=aemoodeecohyohmi
+    - DB_NAME=redmine_production
+    - FQDN
   ports:
     - "80"
