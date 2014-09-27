@@ -44,7 +44,7 @@ Usable Containers
 |----------|---------------------------------------------------------------------------------------------------------|:-------------:|------:|
 |gitlab    |[![Badge](http://dockeri.co/image/sameersbn/gitlab)](https://github.com/sameersbn/docker-gitlab)         |`v7.3.1-3`     |729.5MB|
 |postgresql|[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql) |latest         |488.6MB|
-|redis     |[redis](https://registry.hub.docker.com/_/redis/)                                                        |`v2.8.9`       | 98.7MB|
+|redis     |[![Badge](http://dockeri.co/image/_/redis)](https://registry.hub.docker.com/_/redis/)                    |`v2.8.9`       | 98.7MB|
 
 Topology
 
