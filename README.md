@@ -182,9 +182,14 @@ To launch the Harbur Redmine version run:
 cd redmine
 docker login quay.io               # You need a Harbur TOKEN to access the containers
 FQDN=redmine.mydomain.com fig up -d redmineHarbur
-echo "Redmine can be accessed at: $(docker port dockersdlc_redmineHarbur_1 80)"
+echo "Redmine can be accessed at: $(docker port redmine_redmineHarbur_1 80)"
 fig logs
 </pre>
+
+Login using the default username and password:
+
+* username: **admin**
+* password: **admin**
 
 ![RedmineHarbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/RedmineHarbur.png "RedmineHarbur")
 
@@ -214,37 +219,31 @@ Topology
 
 ### QuickStart Latest
 
+To launch the *latest* Jenkins version run:
+
+<pre>
+cd jenkins
+fig up -d jenkinsLatest
+echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLatest_1 80)"
+</pre>
+
+Jenkins is by default unsecured. Make sure to go to `Manage Jenkins` -> `Setup Security` to configure your security.
+
 ![Jenkins Latest](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLatest.png "Jenkins Latest")
-
-To launch the latest Jenkins version run:
-
-<pre>
-fig -f jenkins.yml up -d jenkinsLatest
-</pre>
-
-To identify the assigned port run:
-
-<pre>
-fig -f jenkins.yml ps
-</pre>
-
-The assigned port for 8080 is the web interface. Open it on the web browser to connect to Jenkins. To find the port programmatically run:
-
-<pre>
-docker port dockersdlc_jenkinsLatest_1 8080
-</pre>
 
 ### QuickStart LTS
 
-![Jenkins LTS](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLTS.png "Jenkins LTS")
-
-To launch the LTS Jenkins version run:
+To launch the *LTS* Jenkins version run:
 
 <pre>
-fig -f jenkins.yml up -d jenkinsLTS
-docker port dockersdlc_jenkinsLTS_1 8080
+cd jenkins
+fig up -d jenkinsLTS
+echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLTS_1 80)"
 </pre>
 
+Jenkins is by default unsecured. Make sure to go to `Manage Jenkins` -> `Setup Security` to configure your security.
+
+![Jenkins LTS](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLTS.png "Jenkins LTS")
 
 Current LTS Issues:
 
