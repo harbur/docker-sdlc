@@ -8,15 +8,18 @@
     - [QuickStart](#quickstart)
   - [GitBucket](#gitbucket)
     - [QuickStart](#quickstart-1)
+- [Project Management](#project-management)
+  - [Redmine](#redmine)
+    - [QuickStart](#quickstart-2)
+    - [QuickStart Harbur](#quickstart-harbur)
 - [Continuous Integration](#continuous-integration)
   - [Jenkins](#jenkins)
     - [QuickStart Latest](#quickstart-latest)
     - [QuickStart LTS](#quickstart-lts)
-    - [QuickStart Harbur](#quickstart-harbur)
-- [Project Management](#project-management)
-  - [Redmine](#redmine)
-    - [QuickStart](#quickstart-2)
     - [QuickStart Harbur](#quickstart-harbur-1)
+- [Continuous Inspection](#continuous-inspection)
+  - [SonarQube](#sonarqube)
+    - [QuickStart](#quickstart-3)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
