@@ -206,10 +206,8 @@ Usable Containers
 |-------------|-----------------------------------------------------------------------------------------------------------|:-------------:|------:|
 |jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3MB|
 |jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                      |LTS `v1.565.2` |  699MB|
-|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                  |latest `v1.581`|  548MB|
+|jenkinsHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fjenkins-blue.svg)](http://docs.harbur.io/en/latest/applications/jenkins/index.html)[]()|latest `v1.581`|  548MB|
 |jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave)](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5MB|
-
-Topology
 
 |Service               |Workers     |
 |--------------------  |------------|
