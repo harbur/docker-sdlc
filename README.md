@@ -224,10 +224,10 @@ To launch the *latest* Jenkins version run:
 <pre>
 cd jenkins
 fig up -d jenkinsLatest
-echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLatest_1 80)"
+echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLatest_1 8080)"
 </pre>
 
-Jenkins is by default unsecured. Make sure to go to `Manage Jenkins` -> `Setup Security` to configure your security.
+Jenkins is by default unsecured. Make sure to go to `Manage Jenkins - Setup Security` to configure your security.
 
 ![Jenkins Latest](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLatest.png "Jenkins Latest")
 
@@ -238,10 +238,10 @@ To launch the *LTS* Jenkins version run:
 <pre>
 cd jenkins
 fig up -d jenkinsLTS
-echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLTS_1 80)"
+echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLTS_1 8080)"
 </pre>
 
-Jenkins is by default unsecured. Make sure to go to `Manage Jenkins` -> `Setup Security` to configure your security.
+Jenkins is by default unsecured. Make sure to go to `Manage Jenkins - Setup Security` to configure your security.
 
 ![Jenkins LTS](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsLTS.png "Jenkins LTS")
 
@@ -251,15 +251,24 @@ Current LTS Issues:
 
 ### QuickStart Harbur
 
-![Jenkins Harbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsHarbur.png "Jenkins Harbur")
+Extra Features
 
-To launch the Harbur Jenkins version run:
+* Pre-installed well-known plugins
+* Pre-installed theme `jenkins-attlassian-theme`
+* Multi-container setup with docker-aware build workers capable to auto-register themselves
+
+To launch the Harbur Jenkins version run
 
 <pre>
+cd jenkins
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-fig -f jenkins.yml -d jenkinsHarbur jenkinsSlave
-docker port dockersdlc_jenkinsHarbur_1 8080
+fig -d jenkinsHarbur jenkinsSlave
+echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsHarbur_1 8080)"
 </pre>
+
+Jenkins is by default unsecured. Make sure to go to `Manage Jenkins - Setup Security` to configure your security.
+
+![Jenkins Harbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/JenkinsHarbur.png "Jenkins Harbur")
 
 This is a multi-container setup with one Jenkins docker-aware slave connected dynamically to Jenkins master.
 The Jenkins slave is running in privileged mode and can run docker commands attached to the host's docker remote API.
@@ -292,12 +301,13 @@ Topology
 
 ### QuickStart
 
-![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
-
-To launch SonarQube
+To launch SonarQube run
 
 <pre>
-fig -f sonarqube.yml up
-echo "SonarQube can be accessed at: $(docker port dockersdlc_sonarqube_1 9000)"
-fig -f sonarqube.yml logs
+cd sonarqube
+fig up
+echo "SonarQube can be accessed at: $(docker port sonar_sonarqube_1 9000)"
+fig logs
 </pre>
+
+![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
