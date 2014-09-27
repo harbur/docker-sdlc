@@ -56,20 +56,27 @@ Topology
 
 ### QuickStart
 
-![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "GitLab")
 
 To launch GitLab
 
 <pre>
-fig -f gitlab.yml up -d
-echo "GitLab can be accessed at: $(docker port dockersdlc_gitlab_1 80)"
-fig -f gitlab.yml logs
+cd gitlab
+fig up -d
+echo "GitLab can be accessed at: $(docker port gitlab_gitlab_1 80)"
+fig logs
 </pre>
+
+Login using the default username and password:
+
+* username: **root**
+* password: **5iveL!fe**
+
+![GitLab](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitLab.png "GitLab")
 
 To stop GitLab
 
 <pre>
-fig -f gitlab.yml stop
+fig stop
 </pre>
 
 To remove GitLab
@@ -77,15 +84,15 @@ To remove GitLab
 *WARNING*: You'll loose your data after this command
 
 <pre>
-fig -f gitlab.yml kill
-fig -f gitlab.yml rm
+fig kill
+fig rm
 </pre>
 
-To launch more than one GitLab instance on same host
+To launch more than one GitLab instances on the same host
 
 <pre>
-fig -f gitlab.yml -p gitlab1 up -d
-fig -f gitlab.yml -p gitlab2 up -d
+fig -p gitlab1 up -d
+fig -p gitlab2 up -d
 echo "GitLab 1 can be accessed at: $(docker port gitlab1_gitlab_1 80)"
 echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 </pre>
@@ -104,15 +111,21 @@ Usable Containers
 
 ### QuickStart
 
-![GitBucket](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitBucket.png "GitBucket")
-
 To launch GitBucket
 
 <pre>
-fig -f gitbucket.yml up -d
-echo "GitBucket can be accessed at: $(docker port dockersdlc_gitbucket_1 8080)"
-fig -f gitbucket.yml logs
+cd gitbucket
+fig up -d
+echo "GitBucket can be accessed at: $(docker port gitbucket_gitbucket_1 8080)"
+fig logs
 </pre>
+
+Login using the default username and password:
+
+* username: **root**
+* password: **root**
+
+![GitBucket](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/GitBucket.png "GitBucket")
 
 # Project Management
 
@@ -139,34 +152,41 @@ Topology
 
 ### QuickStart
 
-![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/Redmine.png "Redmine")
-
 To launch Redmine
 
 <pre>
-fig -f redmine.yml up -d redmine
-echo "Redmine can be accessed at: $(docker port dockersdlc_redmine_1 80)"
-fig -f redmine.yml logs
+cd redmine
+fig up -d redmine
+echo "Redmine can be accessed at: $(docker port redmine_redmine_1 80)"
+fig logs
 </pre>
+
+Login using the default username and password:
+
+* username: **admin**
+* password: **admin**
+
+![Redmine](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/Redmine.png "Redmine")
 
 ### QuickStart Harbur
-
-![RedmineHarbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/RedmineHarbur.png "RedmineHarbur")
-
-To launch the Harbur Redmine version run:
-
-<pre>
-docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=redmine.mydomain.com fig -f redmine.yml up -d redmineHarbur
-echo "Redmine can be accessed at: $(docker port dockersdlc_redmineHarbur_1 80)"
-fig -f redmine.yml logs
-</pre>
 
 Extra Features
 
 * Preconfigured Gitmike Theme
 * Preconfigured SMTP
 * Dynamically configured FQDN (Injected with FQDN variable)
+
+To launch the Harbur Redmine version run:
+
+<pre>
+cd redmine
+docker login quay.io               # You need a Harbur TOKEN to access the containers
+FQDN=redmine.mydomain.com fig up -d redmineHarbur
+echo "Redmine can be accessed at: $(docker port dockersdlc_redmineHarbur_1 80)"
+fig logs
+</pre>
+
+![RedmineHarbur](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/RedmineHarbur.png "RedmineHarbur")
 
 # Continuous Integration
 
