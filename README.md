@@ -81,7 +81,7 @@ fig stop
 
 To remove GitLab
 
-*WARNING*: You'll loose your data after this command
+**WARNING**: You'll loose your data after this command
 
 <pre>
 fig kill
@@ -97,7 +97,7 @@ echo "GitLab 1 can be accessed at: $(docker port gitlab1_gitlab_1 80)"
 echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 </pre>
 
-*NOTE*: These instances do not share anything, new redis & postgresql instances are launched for each one separately.
+**NOTE**: These instances do not share anything, new redis & postgresql instances are launched for each one separately.
 
 ## GitBucket
 
