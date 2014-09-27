@@ -289,7 +289,7 @@ Usable Containers
 
 |ID             |Container                                                                                               |App Version|Size    |
 |---------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
-|sonarqube      |[![Badge](http://dockeri.co/image/harbur/sonarqube)](https://github.com/harbur/docker-sonarqube)        |`v4.4`     |  871 MB|
+|sonarqube      |[![Badge](http://dockeri.co/image/harbur/docker-sonarqube)](https://github.com/harbur/docker-sonarqube) |`v4.4`     |841.6 MB|
 |postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
 
 Topology
@@ -306,8 +306,13 @@ To launch SonarQube run
 <pre>
 cd sonarqube
 fig up
-echo "SonarQube can be accessed at: $(docker port sonar_sonarqube_1 9000)"
+echo "SonarQube can be accessed at: $(docker port sonarqube_sonarqube_1 9000)"
 fig logs
 </pre>
+
+Login using the default username and password:
+
+* username: **admin**
+* password: **admin**
 
 ![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
