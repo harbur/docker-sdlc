@@ -40,11 +40,11 @@ It contains solutions of the following sections:
 
 Usable Containers
 
-|ID        |Container                                                                                                |App Version    |Size    |
-|----------|---------------------------------------------------------------------------------------------------------|:-------------:|-------:|
-|gitlab    |[![Badge](http://dockeri.co/image/sameersbn/gitlab)](https://github.com/sameersbn/docker-gitlab)         |`v7.3.1-3`     |729.5 MB|
-|postgresql|[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql) |latest         |488.6 MB|
-|redis     |[redis](https://registry.hub.docker.com/_/redis/)                                                        |`v2.8.9`       | 98.7 MB|
+|ID        |Container                                                                                                |App Version    |Size   |
+|----------|---------------------------------------------------------------------------------------------------------|:-------------:|------:|
+|gitlab    |[![Badge](http://dockeri.co/image/sameersbn/gitlab)](https://github.com/sameersbn/docker-gitlab)         |`v7.3.1-3`     |729.5MB|
+|postgresql|[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql) |latest         |488.6MB|
+|redis     |[redis](https://registry.hub.docker.com/_/redis/)                                                        |`v2.8.9`       | 98.7MB|
 
 Topology
 
@@ -105,9 +105,9 @@ echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 
 Usable Containers
 
-|ID        |Container                                                                                             |App Version    |Size    |
-|----------|------------------------------------------------------------------------------------------------------|:-------------:|-------:|
-|gitbucket |[![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)](https://github.com/f99aq8ove/docker-gitbucket)|`v2.2.1`       |376.2 MB|
+|ID        |Container                                                                                             |App Version    |Size   |
+|----------|------------------------------------------------------------------------------------------------------|:-------------:|------:|
+|gitbucket |[![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)](https://github.com/f99aq8ove/docker-gitbucket)|`v2.2.1`       |376.2MB|
 
 ### QuickStart
 
@@ -135,11 +135,11 @@ Login using the default username and password:
 
 Usable Containers
 
-|ID           |Container                                                                                               |App Version|Size    |
-|-------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
-|redmine      |[![Badge](http://dockeri.co/image/sameersbn/redmine)](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9 MB|
-|postgresql   |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
-|redmineHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fredmine-blue.svg)](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1 MB|
+|ID           |Container                                                                                               |App Version|Size   |
+|-------------|--------------------------------------------------------------------------------------------------------|:---------:|------:|
+|redmine      |[![Badge](http://dockeri.co/image/sameersbn/redmine)](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9MB|
+|postgresql   |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
+|redmineHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fredmine-blue.svg)](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1MB|
 
 
 Topology
@@ -202,12 +202,12 @@ Login using the default username and password:
 
 Usable Containers
 
-|ID           |Container                                                                                                  |App Version    |Size    |
-|-------------|-----------------------------------------------------------------------------------------------------------|:-------------:|-------:|
-|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3 MB|
-|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                      |LTS `v1.565.2` |  699 MB|
-|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                  |latest `v1.581`|  548 MB|
-|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave)](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5 MB|
+|ID           |Container                                                                                                  |App Version    |Size   |
+|-------------|-----------------------------------------------------------------------------------------------------------|:-------------:|------:|
+|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3MB|
+|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                                                      |LTS `v1.565.2` |  699MB|
+|jenkinsHarbur|[quay.io/harbur/jenkins](http://docs.harbur.io/en/latest/applications/jenkins/index.html)                  |latest `v1.581`|  548MB|
+|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave)](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5MB|
 
 Topology
 
@@ -288,10 +288,10 @@ fig -f jenkins.yml scale jenkinsSlave=2
 
 Usable Containers
 
-|ID             |Container                                                                                               |App Version|Size    |
-|---------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
-|sonarqube      |[![Badge](http://dockeri.co/image/harbur/docker-sonarqube)](https://github.com/harbur/docker-sonarqube) |`v4.4`     |841.6 MB|
-|postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
+|ID             |Container                                                                                               |App Version|Size   |
+|---------------|--------------------------------------------------------------------------------------------------------|:---------:|------:|
+|sonarqube      |[![Badge](http://dockeri.co/image/harbur/docker-sonarqube)](https://github.com/harbur/docker-sonarqube) |`v4.4`     |841.6MB|
+|postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
 
 Topology
 
