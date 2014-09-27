@@ -139,7 +139,8 @@ Usable Containers
 |-------------|--------------------------------------------------------------------------------------------------------|:---------:|-------:|
 |redmine      |[![Badge](http://dockeri.co/image/sameersbn/redmine)](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9 MB|
 |postgresql   |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6 MB|
-|redmineHarbur|[quay.io/harbur/redmine](http://docs.harbur.io/en/latest/applications/redmine/index.html)               |`v2.5.2-2` |998.1 MB|
+|redmineHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fredmine-blue.svg)](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1 MB|
+
 
 Topology
 
