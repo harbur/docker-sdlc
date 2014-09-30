@@ -320,3 +320,7 @@ Login using the default username and password:
 * password: **admin**
 
 ![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
+
+# More info
+
+For more information checkout our website: https://harbur.io
