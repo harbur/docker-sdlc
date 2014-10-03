@@ -287,7 +287,7 @@ fig -f jenkins.yml scale jenkinsSlave=2
 
 ## SonarQube
 
-> [SonarQube](http://www.sonarqube.org/) is a flexible project management web application
+> [SonarQube](http://www.sonarqube.org/) is an open platform to manage code quality
 
 Usable Containers
 
