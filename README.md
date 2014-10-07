@@ -185,7 +185,7 @@ To launch the Harbur Redmine version run:
 <pre>
 cd redmine
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=redmine.mydomain.com fig up -d redmineHarbur
+FQDN=redmine.myfullyqualified.domain.name fig up -d redmineHarbur
 echo "Redmine can be accessed at: $(docker port redmine_redmineHarbur_1 80)"
 fig logs
 </pre>
@@ -259,7 +259,7 @@ Extra Features
 
 * Pre-installed well-known plugins
 * Pre-installed theme `jenkins-attlassian-theme`
-* Pre-configured Jenkins to use FQDN
+* Dynamically configured FQDN (Injected with FQDN variable)
 * Multi-container setup with docker-aware build workers capable to auto-register themselves
 
 To launch the Harbur Jenkins version run
@@ -267,7 +267,7 @@ To launch the Harbur Jenkins version run
 <pre>
 cd jenkins
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=ci.myfullyqualified.domain.name fig -d jenkinsHarbur jenkinsSlave
+FQDN=ci.myfullyqualified.domain.name fig up -d jenkinsHarbur jenkinsSlave
 echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsHarbur_1 8080)"
 </pre>
 
