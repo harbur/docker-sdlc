@@ -287,7 +287,7 @@ fig -f jenkins.yml scale jenkinsSlave=2
 
 ## SonarQube
 
-> [SonarQube](http://www.sonarqube.org/) is a flexible project management web application
+> [SonarQube](http://www.sonarqube.org/) is an open platform to manage code quality
 
 Usable Containers
 
@@ -320,3 +320,7 @@ Login using the default username and password:
 * password: **admin**
 
 ![SonarQube](https://raw.githubusercontent.com/harbur/docker-sdlc/master/images/SonarQube.png "SonarQube")
+
+# More info
+
+For more information checkout our website: https://harbur.io
