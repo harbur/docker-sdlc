@@ -10,7 +10,7 @@ jenkinsLTS:
 jenkinsHarbur:
   image: quay.io/harbur/jenkins:latest
   environment:
-    - HOSTNAME
+    - FQDN
   ports:
     - "8080"
 jenkinsSlave:

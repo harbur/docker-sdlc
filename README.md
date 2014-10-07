@@ -259,6 +259,7 @@ Extra Features
 
 * Pre-installed well-known plugins
 * Pre-installed theme `jenkins-attlassian-theme`
+* Pre-configured Jenkins to use FQDN
 * Multi-container setup with docker-aware build workers capable to auto-register themselves
 
 To launch the Harbur Jenkins version run
@@ -266,7 +267,7 @@ To launch the Harbur Jenkins version run
 <pre>
 cd jenkins
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-fig -d jenkinsHarbur jenkinsSlave
+FQDN=ci.myfullyqualified.domain.name fig -d jenkinsHarbur jenkinsSlave
 echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsHarbur_1 8080)"
 </pre>
 
