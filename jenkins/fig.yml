@@ -1,14 +1,5 @@
-jenkinsLatest:
-  image: aespinosa/jenkins:latest
-  ports:
-    - "8080"
-jenkinsLTS:
-  image: jenkins:latest
-  ports:
-    - "8080"
-    - "50000"
 jenkinsHarbur:
-  image: quay.io/harbur/jenkins:latest
+  image: quay.io/harbur/jenkins:1.595
   environment:
     - FQDN
   ports:
@@ -19,4 +10,5 @@ jenkinsSlave:
     - jenkinsHarbur:master
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
+    - /jenkins
   privileged: true
