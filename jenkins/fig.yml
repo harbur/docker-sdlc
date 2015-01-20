@@ -2,6 +2,7 @@ jenkinsHarbur:
   image: quay.io/harbur/jenkins:1.595
   environment:
     - FQDN
+    - VIRTUAL_HOST
   ports:
     - "8080"
 jenkinsSlave:
