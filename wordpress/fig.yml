@@ -1,0 +1,16 @@
+web:
+  image: wordpress:4.1.0
+  ports:
+    - "84:80"
+  links:
+    - mysql:mysql
+  volumes:
+    - .:/code
+  environment:
+    WORDPRESS_DB_PASSWORD: mypwd
+mysql:
+  image: orchardup/mysql:latest
+  environment:
+    MYSQL_DATABASE: wordpress
+    MYSQL_ROOT_PASSWORD: mypwd
+
