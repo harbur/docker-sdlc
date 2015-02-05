@@ -2,3 +2,6 @@ nexusHarbur:
   image: quay.io/harbur/nexus:latest
   ports:
     - "8080"
+  environment:
+    - FQDN
+    - VIRTUAL_HOST
