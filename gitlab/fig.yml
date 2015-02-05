@@ -5,7 +5,7 @@ postgresql:
     - POSTGRESQL_PASS=airoaroonipouvua
     - POSTGRESQL_DB=gitlabhq_production
 gitlab:
-  image: sameersbn/gitlab:7.3.1-3
+  image: sameersbn/gitlab:7.7.2
   links:
    - redis:redisio
    - postgresql:postgresql
