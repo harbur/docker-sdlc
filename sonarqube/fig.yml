@@ -12,6 +12,8 @@ sonarqube:
     - DB_USER=sonar
     - DB_PASS=xaexohquaetiesoo
     - DB_NAME=sonar
+    - VIRTUAL_HOST
+    - VIRTUAL_PORT=9000
   ports:
     - "9000"
     - "443"
