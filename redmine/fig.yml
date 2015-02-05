@@ -23,5 +23,6 @@ redmineHarbur:
     - DB_PASS=aemoodeecohyohmi
     - DB_NAME=redmine_production
     - FQDN
+    - VIRTUAL_HOST
   ports:
     - "80"
