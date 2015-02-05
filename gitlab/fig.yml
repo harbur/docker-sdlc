@@ -16,5 +16,8 @@ gitlab:
     - DB_USER=gitlab
     - DB_PASS=airoaroonipouvua
     - DB_NAME=gitlabhq_production
+    - FQDN
+    - VIRTUAL_HOST
+    - VIRTUAL_PORT=80
 redis:
   image: redis:2.8.9
