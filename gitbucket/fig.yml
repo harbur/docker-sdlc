@@ -1,4 +1,7 @@
 gitbucket:
   image: f99aq8ove/gitbucket:latest
+  environment:
+    - FQDN
+    - VIRTUAL_HOST
   ports:
     - "8080"
