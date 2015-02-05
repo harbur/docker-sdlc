@@ -5,7 +5,7 @@ postgresql:
     - POSTGRESQL_PASS=xaexohquaetiesoo
     - POSTGRESQL_DB=sonar
 sonarqube:
-  image: harbur/sonarqube:4.4
+  image: harbur/sonarqube:5.0
   links:
     - postgresql:db
   environment:
