@@ -1,0 +1,5 @@
+nginx:
+  images: nginx:1.7.9
+  environment:
+    - VIRTUAL_HOST
+    - VIRTUAL_PORT=80
