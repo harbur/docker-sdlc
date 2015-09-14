@@ -64,9 +64,9 @@ To launch GitLab
 
 <pre>
 cd gitlab
-fig up -d
+docker-compose up -d
 echo "GitLab can be accessed at: $(docker port gitlab_gitlab_1 80)"
-fig logs
+docker-compose logs
 </pre>
 
 Login using the default username and password:
@@ -79,7 +79,7 @@ Login using the default username and password:
 To stop GitLab
 
 <pre>
-fig stop
+docker-compose stop
 </pre>
 
 To remove GitLab
@@ -87,15 +87,15 @@ To remove GitLab
 **WARNING**: You'll loose your data after this command
 
 <pre>
-fig kill
-fig rm
+docker-compose kill
+docker-compose rm
 </pre>
 
 To launch more than one GitLab instances on the same host
 
 <pre>
-fig -p gitlab1 up -d
-fig -p gitlab2 up -d
+docker-compose -p gitlab1 up -d
+docker-compose -p gitlab2 up -d
 echo "GitLab 1 can be accessed at: $(docker port gitlab1_gitlab_1 80)"
 echo "GitLab 2 can be accessed at: $(docker port gitlab2_gitlab_1 80)"
 </pre>
@@ -118,9 +118,9 @@ To launch GitBucket
 
 <pre>
 cd gitbucket
-fig up -d
+docker-compose up -d
 echo "GitBucket can be accessed at: $(docker port gitbucket_gitbucket_1 8080)"
-fig logs
+docker-compose logs
 </pre>
 
 Login using the default username and password:
@@ -160,9 +160,9 @@ To launch Redmine
 
 <pre>
 cd redmine
-fig up -d redmine
+docker-compose up -d redmine
 echo "Redmine can be accessed at: $(docker port redmine_redmine_1 80)"
-fig logs
+docker-compose logs
 </pre>
 
 Login using the default username and password:
@@ -185,9 +185,9 @@ To launch the Harbur Redmine version run:
 <pre>
 cd redmine
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=redmine.myfullyqualified.domain.name fig up -d redmineHarbur
+FQDN=redmine.myfullyqualified.domain.name docker-compose up -d redmineHarbur
 echo "Redmine can be accessed at: $(docker port redmine_redmineHarbur_1 80)"
-fig logs
+docker-compose logs
 </pre>
 
 Login using the default username and password:
@@ -227,7 +227,7 @@ To launch the *latest* Jenkins version run:
 
 <pre>
 cd jenkins
-fig up -d jenkinsLatest
+docker-compose up -d jenkinsLatest
 echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLatest_1 8080)"
 </pre>
 
@@ -241,7 +241,7 @@ To launch the *LTS* Jenkins version run:
 
 <pre>
 cd jenkins
-fig up -d jenkinsLTS
+docker-compose up -d jenkinsLTS
 echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsLTS_1 8080)"
 </pre>
 
@@ -267,7 +267,7 @@ To launch the Harbur Jenkins version run
 <pre>
 cd jenkins
 docker login quay.io               # You need a Harbur TOKEN to access the containers
-FQDN=ci.myfullyqualified.domain.name fig up -d jenkinsHarbur jenkinsSlave
+FQDN=ci.myfullyqualified.domain.name docker-compose up -d jenkinsHarbur jenkinsSlave
 echo "Jenkins can be accessed at: $(docker port jenkins_jenkinsHarbur_1 8080)"
 </pre>
 
@@ -281,7 +281,7 @@ The Jenkins slave is running in privileged mode and can run docker commands atta
 In case more slave instances are needed you can scale dynamically with the following command:
 
 <pre>
-fig -f jenkins.yml scale jenkinsSlave=2
+docker-compose -f jenkins.yml scale jenkinsSlave=2
 </pre>
 
 # Continuous Inspection
@@ -310,9 +310,9 @@ To launch SonarQube run
 
 <pre>
 cd sonarqube
-fig up
+docker-compose up
 echo "SonarQube can be accessed at: $(docker port sonarqube_sonarqube_1 9000)"
-fig logs
+docker-compose logs
 </pre>
 
 Login using the default username and password:
