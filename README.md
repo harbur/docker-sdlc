@@ -45,9 +45,9 @@ Usable Containers
 
 |ID        |Container                                                                                                |App Version    |Size   |
 |----------|---------------------------------------------------------------------------------------------------------|:-------------:|------:|
-|gitlab    |[![Badge](http://dockeri.co/image/sameersbn/gitlab)](https://github.com/sameersbn/docker-gitlab)         |`v7.3.1-3`     |729.5MB|
-|postgresql|[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql) |latest         |488.6MB|
-|redis     |[![Badge](http://dockeri.co/image/_/redis)](https://registry.hub.docker.com/_/redis/)                    |`v2.8.9`       | 98.7MB|
+|gitlab    |[docker-gitlab](https://github.com/sameersbn/docker-gitlab)         |`v7.3.1-3`     |729.5MB|
+|postgresql|[docekr-postgresql](https://github.com/orchardup/docker-postgresql) |latest         |488.6MB|
+|redis     |[redis)](https://registry.hub.docker.com/_/redis/)                  |`v2.8.9`       | 98.7MB|
 
 Topology
 
@@ -110,7 +110,7 @@ Usable Containers
 
 |ID        |Container                                                                                             |App Version    |Size   |
 |----------|------------------------------------------------------------------------------------------------------|:-------------:|------:|
-|gitbucket |[![Badge](http://dockeri.co/image/f99aq8ove/gitbucket)](https://github.com/f99aq8ove/docker-gitbucket)|`v2.2.1`       |376.2MB|
+|gitbucket |[docker-gitbucket](https://github.com/f99aq8ove/docker-gitbucket)|`v2.2.1`       |376.2MB|
 
 ### QuickStart
 
@@ -140,8 +140,8 @@ Usable Containers
 
 |ID           |Container                                                                                               |App Version|Size   |
 |-------------|--------------------------------------------------------------------------------------------------------|:---------:|------:|
-|redmine      |[![Badge](http://dockeri.co/image/sameersbn/redmine)](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9MB|
-|postgresql   |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
+|redmine      |[docker-redmine](https://github.com/sameersbn/docker-redmine)      |`v2.5.2-2` |997.9MB|
+|postgresql   |[docker-postgresql](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
 |redmineHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fredmine-blue.svg)](http://docs.harbur.io/en/latest/applications/redmine/index.html)|`v2.5.2-2` |998.1MB|
 
 
@@ -207,10 +207,10 @@ Usable Containers
 
 |ID           |Container                                                                                                  |App Version    |Size   |
 |-------------|-----------------------------------------------------------------------------------------------------------|:-------------:|------:|
-|jenkinsLatest|[![Badge](http://dockeri.co/image/aespinosa/jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3MB|
-|jenkinsLTS   |[![Badge](http://dockeri.co/image/_/jenkins)](https://registry.hub.docker.com/_/jenkins/)                  |LTS `v1.565.2` |  699MB|
+|jenkinsLatest|[docker-jenkins)](https://github.com/aespinosa/docker-jenkins)         |latest `v1.581`|471.3MB|
+|jenkinsLTS   |[jenkins](https://registry.hub.docker.com/_/jenkins/)                  |LTS `v1.565.2` |  699MB|
 |jenkinsHarbur|[![Docker Repository on Quay.io](http://img.shields.io/badge/container-quay.io%2Fharbur%2Fjenkins-blue.svg)](http://docs.harbur.io/en/latest/applications/jenkins/index.html)[]()|latest `v1.581`|  548MB|
-|jenkinsSlave |[![Badge](http://dockeri.co/image/spiddy/dind-jenkins-slave)](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5MB|
+|jenkinsSlave |[dind-jenkins-slave](https://github.com/spiddy/dind-jenkins-slave)|-              |891.5MB|
 
 Topology
 
@@ -294,8 +294,8 @@ Usable Containers
 
 |ID             |Container                                                                                               |App Version|Size   |
 |---------------|--------------------------------------------------------------------------------------------------------|:---------:|------:|
-|sonarqube      |[![Badge](http://dockeri.co/image/harbur/sonarqube)](https://github.com/harbur/docker-sonarqube)        |`v4.4`     |841.6MB|
-|postgresql     |[![Badge](http://dockeri.co/image/orchardup/postgresql)](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
+|sonarqube      |[docker-sonarqube](https://github.com/harbur/docker-sonarqube)        |`v4.4`     |841.6MB|
+|postgresql     |[docker-postgresql](https://github.com/orchardup/docker-postgresql)|latest     |488.6MB|
 
 Topology
 
